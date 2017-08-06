@@ -8,5 +8,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @date 4/8/2017 5:14 PM
  */
 public interface UserRepository extends MongoRepository<User, Long> {
-    User fingByUsername(String username);
+    User findByUsername(String username);
 }
